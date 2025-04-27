@@ -217,3 +217,14 @@ The system is composed of the following components:
 ## Testing Customer Search (Future)
 
 (Instructions TBD once the customer frontend and search API are built)
+
+## License
+
+This project is proprietary and provided "as is" without warranty of any kind.
+Use is permitted for non-commercial purposes only.
+
+Copyright (c) 2024 Chezona
+All Rights Reserved.
+
+Modification, redistribution, or commercial use is strictly prohibited without
+prior written permission from the copyright holder.
