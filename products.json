@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 14 Pro",
+    "description": "The latest Apple smartphone with ProMotion display.",
+    "price": 4500000,
+    "currency": "UGX",
+    "category": "Electronics",
+    "vendor": "TechHub Kampala"
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S23 Ultra",
+    "description": "Flagship Android phone with advanced camera system.",
+    "price": 4200000,
+    "currency": "UGX",
+    "category": "Electronics",
+    "vendor": "Gadget World Jinja"
+  },
+  {
+    "id": 3,
+    "name": "HP Spectre x360 Laptop",
+    "description": "Convertible laptop with touch screen.",
+    "price": 5500000,
+    "currency": "UGX",
+    "category": "Computers",
+    "vendor": "TechHub Kampala"
+  },
+  {
+    "id": 4,
+    "name": "iPhone 13 Mini",
+    "description": "Compact Apple smartphone from the previous generation.",
+    "price": 3200000,
+    "currency": "UGX",
+    "category": "Electronics",
+    "vendor": "OnlineMobile Uganda"
+  },
+  {
+    "id": 5,
+    "name": "Anker Power Bank 20000mAh",
+    "description": "High-capacity portable charger for phones and tablets.",
+    "price": 150000,
+    "currency": "UGX",
+    "category": "Accessories",
+    "vendor": "Gadget World Jinja"
+  }
+] 

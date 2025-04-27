@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=68.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "pywa.__version__"}
+readme = {file = "README.md", content-type = "text/markdown"}
+dependencies = {file = "requirements.txt"}
+
+[tool.setuptools.packages.find]
+include = ["pywa*"]
+
+[project]
+name = "pywa"
+description = "Python wrapper for the WhatsApp Cloud API"
+dynamic = ["version", "readme", "dependencies"]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    {name = "David Lev", email = "david@davidlev.dev"},
+]
+keywords = ["whatsapp", "whatsapp-api", "whatsapp-cloud-api", "whatsapp-cloud", "whatsapp-api-python",
+    "whatsapp-cloud-api-python", "pywa", "wapy", "wa", "wa-api", "wa-cloud-api", "wa-cloud", "wa-api-python",
+    "wa-cloud-api-python", "whatsapp-webhook", "whatsapp-webhook-python", "whatsapp-webhook-api", "whatsapp-flows",
+    "whatsapp-cloud-api-flows"
+]
+classifiers = [
+    "Topic :: Communications :: Chat",
+    "Topic :: Communications",
+    "Topic :: Utilities",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries :: Application Frameworks"
+]
+
+[project.optional-dependencies]
+flask = ["flask[async]"]
+fastapi = ["fastapi[standard]"]
+cryptography = ["cryptography"]
+
+[project.urls]
+"Documentation" = "https://pywa.readthedocs.io/"
+"Issue Tracker" = "https://github.com/david-lev/pywa/issues"
+"Source Code" = "https://github.com/david-lev/pywa"
+"Funding" = "https://github.com/sponsors/david-lev"
+"Changelog" = "https://github.com/david-lev/pywa/blob/master/CHANGELOG.md"
+
+[tool.ruff.lint]
+ignore = ["E731", "F401", "E402", "F405"]
+
+
+[tool.coverage.run]
+source = ["pywa"]
+omit = [
+    "pywa/__init__.py",
+    "pywa/api.py",
+    "pywa/listeners.py",
+    "pywa/server.py",
+    "pywa/handlers.py",
+]

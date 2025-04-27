@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+langchain
+langgraph
+meilisearch
+python-dotenv # For loading environment variables
+langchain-openai # For OpenAI & compatible APIs (e.g., DeepSeek)
+requests
+httpx
+pywa[fastapi]
+# pillow # If needed for image processing later
+# Add WhatsApp library later (e.g., twilio, whatsapp-cloud-api)
